@@ -1,0 +1,290 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, shrink-to-fit=no, viewport-fit=cover">
+  <title>CILPA — Product Photos Portfolio</title>
+  <meta name="description" content="CILPA product photo portfolio for catalogue, marketplace, and social media content.">
+  <meta name="theme-color" content="#6C6BF3">
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://cdn.jsdelivr.net">
+  <link rel="stylesheet" href="assets/css/tailwind-lite.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/motion-v11.css">
+  <link rel="stylesheet" href="assets/css/awwwards.css">
+</head>
+<body class="site-motion">
+<canvas id="three-bg" class="three-canvas page-bg-canvas" aria-hidden="true"></canvas>
+<div class="cilpa-cursor" aria-hidden="true">
+  <img src="assets/img/external/cilpa-logo.png" alt="" width="28" height="28">
+</div>
+<div class="page-aurora" aria-hidden="true"></div>
+<header class="site-header">
+  <div class="container nav">
+    <a class="brand" href="index.html" aria-label="CILPA Home">
+      <img src="assets/img/external/cilpa-logo.png" alt="CILPA" onerror="this.src='favicon.png'">
+      <b>CILPA</b>
+    </a>
+    <button class="menu-btn" type="button" aria-label="Buka navigasi menu" aria-expanded="false" id="menuToggle">
+      <span class="menu-btn-icon" aria-hidden="true">
+        <span class="line line-1"></span>
+        <span class="line line-2"></span>
+        <span class="line line-3"></span>
+      </span>
+    </button>
+    <nav class="nav-links" aria-label="Navigasi utama">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <div class="nav-drop">
+        <button type="button" class="drop-btn active">Portfolio</button>
+        <div class="drop-menu">
+          <a href="portfolio-video-ads.html">Video Ads</a>
+          <a href="portfolio-product-photos.html" class="active">Product Photos</a>
+          <a href="portfolio-graphic-design.html">Graphic Design</a>
+          <a href="portfolio-talent.html">Talent / Model</a>
+        </div>
+      </div>
+      <div class="nav-drop">
+        <button type="button" class="drop-btn">Event</button>
+        <div class="drop-menu">
+          <a href="wmk.html">WMK Demo Day</a>
+          <a href="awas-ketempelan.html">Awas Ketempelan Vol. 2</a>
+          <a href="mcebi.html">MCEBI Achievement</a>
+          <a href="k2-data-centre.html">K2 Data Centre</a>
+        </div>
+      </div>
+      <a class="nav-cta" href="https://wa.me/6283119963064" target="_blank" rel="noopener">Contact</a>
+    </nav>
+  </div>
+</header>
+<main>
+  <section class="page-hero portfolio-hero motion-page-hero">
+    <div class="container page-grid">
+      <div class="reveal" data-parallax="0.08">
+        <span class="eyebrow">Product Photos</span>
+        <h1>Foto produk yang clean, tajam, dan punya karakter.</h1>
+        <p class="lead">Gallery fotografi produk untuk beauty, fragrance, food &amp; beverage, fashion, arsitektur, dan katalog komersial brand.</p>
+        <div class="hero-actions">
+          <a class="btn primary magnet" href="https://wa.me/6283119963064" target="_blank" rel="noopener">Konsultasi Project</a>
+          <a class="btn ghost magnet" href="#portfolio">Lihat Gallery</a>
+        </div>
+      </div>
+      <div class="portfolio-preview portfolio-slideshow reveal motion-preview" data-tilt data-parallax="0.14">
+        <img src="assets/img/portfolio/placeholders/photo-fragrance-editorial.jpg" alt="Fotografi Produk Parfum">
+        <img src="assets/img/portfolio/placeholders/photo-skincare-studio.jpg" alt="Fotografi Produk Skincare">
+        <img src="assets/img/portfolio/placeholders/photo-artisan-coffee.jpg" alt="Fotografi Produk Kopi">
+        <img src="assets/img/portfolio/placeholders/photo-leather-goods.jpg" alt="Fotografi Produk Fashion">
+        <img src="assets/img/portfolio/placeholders/photo-architecture-modern.jpg" alt="Fotografi Arsitektur Modern">
+      </div>
+    </div>
+  </section>
+
+  <section class="section compact portfolio-showcase" id="portfolio">
+    <div class="container section-head reveal">
+      <span class="eyebrow">Gallery View</span>
+      <h2>Portfolio pilihan.</h2>
+      <p class="lead">Pilihan fotografi produk komersial untuk kebutuhan katalog, e-commerce, dan materi kampanye brand.</p>
+    </div>
+    <div class="container filter-bar reveal" role="list">
+      <button type="button" class="filter-btn active" data-filter="all">All</button>
+      <button type="button" class="filter-btn" data-filter="beauty">Beauty &amp; Fragrance</button>
+      <button type="button" class="filter-btn" data-filter="food">Food &amp; Beverage</button>
+      <button type="button" class="filter-btn" data-filter="fashion">Fashion</button>
+      <button type="button" class="filter-btn" data-filter="architecture">Architecture</button>
+    </div>
+    <!-- Placeholder Product Photography Assets — ganti src gambar & judul saat aset final siap -->
+    <div class="container portfolio-gallery-grid">
+      <article class="portfolio-card-motion reveal" data-category="beauty">
+        <div class="portfolio-thumb">
+          <img src="assets/img/portfolio/placeholders/photo-fragrance-editorial.jpg" alt="Sculptural Fragrance Editorial">
+          <div class="portfolio-thumb-overlay"><div class="zoom-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="15 3 21 3 21 9"/><polyline points="9 21 3 21 3 15"/><line x1="21" y1="3" x2="14" y2="10"/><line x1="3" y1="21" x2="10" y2="14"/></svg><span>Preview</span></div></div>
+        </div>
+        <div class="portfolio-info">
+          <span>Fragrance</span>
+          <h3>Sculptural Fragrance Editorial</h3>
+          <p>Pemotretan botol parfum dengan tekstur travertine dan refleksi cahaya alami.</p>
+        </div>
+      </article>
+
+      <article class="portfolio-card-motion reveal" data-category="beauty">
+        <div class="portfolio-thumb">
+          <img src="assets/img/portfolio/placeholders/photo-skincare-studio.jpg" alt="Studio Skincare Serum">
+          <div class="portfolio-thumb-overlay"><div class="zoom-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="15 3 21 3 21 9"/><polyline points="9 21 3 21 3 15"/><line x1="21" y1="3" x2="14" y2="10"/><line x1="3" y1="21" x2="10" y2="14"/></svg><span>Preview</span></div></div>
+        </div>
+        <div class="portfolio-info">
+          <span>Beauty &amp; Skincare</span>
+          <h3>Frosted Serum Studio Shot</h3>
+          <p>Foto katalog skincare dengan pencahayaan studio lembut dan podium akrilik bening.</p>
+        </div>
+      </article>
+
+      <article class="portfolio-card-motion reveal" data-category="food">
+        <div class="portfolio-thumb">
+          <img src="assets/img/portfolio/placeholders/photo-artisan-coffee.jpg" alt="Iced Specialty Espresso Latte">
+          <div class="portfolio-thumb-overlay"><div class="zoom-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="15 3 21 3 21 9"/><polyline points="9 21 3 21 3 15"/><line x1="21" y1="3" x2="14" y2="10"/><line x1="3" y1="21" x2="10" y2="14"/></svg><span>Preview</span></div></div>
+        </div>
+        <div class="portfolio-info">
+          <span>Food &amp; Beverage</span>
+          <h3>Specialty Iced Espresso</h3>
+          <p>Fotografi minuman dark-moody untuk menu kafe, iklan digital, dan materi promo F&amp;B.</p>
+        </div>
+      </article>
+
+      <article class="portfolio-card-motion reveal" data-category="food">
+        <div class="portfolio-thumb">
+          <img src="assets/img/portfolio/placeholders/photo-dessert-patisserie.jpg" alt="Artisan Patisserie & Croissant">
+          <div class="portfolio-thumb-overlay"><div class="zoom-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="15 3 21 3 21 9"/><polyline points="9 21 3 21 3 15"/><line x1="21" y1="3" x2="14" y2="10"/><line x1="3" y1="21" x2="10" y2="14"/></svg><span>Preview</span></div></div>
+        </div>
+        <div class="portfolio-info">
+          <span>Culinary</span>
+          <h3>Artisan Patisserie Table</h3>
+          <p>Editorial food styling dengan pencahayaan pagi alami yang menonjolkan tekstur hidangan.</p>
+        </div>
+      </article>
+
+      <article class="portfolio-card-motion reveal" data-category="fashion">
+        <div class="portfolio-thumb">
+          <img src="assets/img/portfolio/placeholders/photo-leather-goods.jpg" alt="Handcrafted Leather & Timepiece">
+          <div class="portfolio-thumb-overlay"><div class="zoom-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="15 3 21 3 21 9"/><polyline points="9 21 3 21 3 15"/><line x1="21" y1="3" x2="14" y2="10"/><line x1="3" y1="21" x2="10" y2="14"/></svg><span>Preview</span></div></div>
+        </div>
+        <div class="portfolio-info">
+          <span>Fashion &amp; Goods</span>
+          <h3>Minimalist Leather &amp; Watch</h3>
+          <p>Foto still-life aksesori dan produk kulit untuk lookbook serta halaman e-commerce.</p>
+        </div>
+      </article>
+
+      <article class="portfolio-card-motion reveal" data-category="architecture">
+        <div class="portfolio-thumb">
+          <img src="assets/img/portfolio/placeholders/photo-architecture-modern.jpg" alt="Contemporary Commercial Architecture">
+          <div class="portfolio-thumb-overlay"><div class="zoom-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="15 3 21 3 21 9"/><polyline points="9 21 3 21 3 15"/><line x1="21" y1="3" x2="14" y2="10"/><line x1="3" y1="21" x2="10" y2="14"/></svg><span>Preview</span></div></div>
+        </div>
+        <div class="portfolio-info">
+          <span>Architecture</span>
+          <h3>Modern Commercial Facade</h3>
+          <p>Fotografi eksterior gedung dan properti di waktu blue hour dengan garis perspektif presisi.</p>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <section class="section compact">
+    <div class="container cta reveal">
+      <span class="eyebrow light">Start Project</span>
+      <h2>Butuh visual seperti ini untuk brand kamu?</h2>
+      <div class="hero-actions">
+        <a class="btn primary magnet" href="https://wa.me/6283119963064" target="_blank" rel="noopener">Chat WhatsApp</a>
+        <a class="btn ghost instagram-cta" href="https://www.instagram.com/cilpa.official/" target="_blank" rel="noopener">Instagram</a>
+      </div>
+    </div>
+  </section>
+</main>
+<footer class="footer-awwwards">
+  <div class="footer-ambient-aurora"></div>
+  <div class="container">
+    <div class="footer-invite-row">
+      <div class="footer-invite-left">
+        <span class="footer-kicker">Mulai Kolaborasi</span>
+        <h2>Punya Ide Brilian?<br>Mari Ciptakan Karya Ikonik Bersama.</h2>
+        <p>Dari konsep video komersial hingga visual identitas brand — kami siap mengeksekusinya secara rapi dan terukur.</p>
+      </div>
+      <div class="footer-action-box">
+        <a href="https://wa.me/6283119963064?text=Halo%20Cilpa%2C%20saya%20tertarik%20untuk%20bekerjasama%20project..." target="_blank" rel="noopener noreferrer" class="btn-cta-big">
+          <span>Diskusi Project Sekarang</span>
+          <span class="btn-icon" aria-hidden="true">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
+          </span>
+        </a>
+        <button type="button" class="btn-copy-email" id="copyEmailBtn" data-email="info@cilpa.biz.id" title="Salin Email CILPA">
+          <span class="email-label" id="copyEmailText">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+            <span>info@cilpa.biz.id</span>
+          </span>
+          <span class="copy-badge" id="copyBadge">Salin</span>
+        </button>
+        <div class="footer-location-strip">
+          <span class="location-label">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+            <span>Depok &amp; Jakarta, Indonesia</span>
+          </span>
+          <span class="clock-ticker" id="jakartaTime">--:--:-- WIB</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bento-grid">
+      <div class="footer-col-brand">
+        <a href="index.html" class="brand" aria-label="CILPA Home">
+          <img src="assets/img/external/cilpa-logo.png" alt="CILPA Logo" width="44" height="44" loading="lazy" onerror="this.src='favicon.png'">
+          <b>CILPA</b>
+        </a>
+        <p>Creative studio untuk produksi video promosi, fotografi produk, desain grafis, dan talent production.</p>
+        <div class="footer-social-pills">
+          <a href="https://www.instagram.com/cilpa.official/" target="_blank" rel="noopener noreferrer" class="social-pill">Instagram</a>
+          <a href="https://wa.me/6283119963064" target="_blank" rel="noopener noreferrer" class="social-pill">WhatsApp</a>
+        </div>
+      </div>
+
+      <div class="footer-nav-group">
+        <h4>Portfolio</h4>
+        <ul>
+          <li><a href="portfolio-video-ads.html">Video Ads &amp; Commercial</a></li>
+          <li><a href="portfolio-product-photos.html">Product Photography</a></li>
+          <li><a href="portfolio-graphic-design.html">Graphic Design &amp; Brand</a></li>
+          <li><a href="portfolio-talent.html">Talent &amp; Model Roster</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-nav-group">
+        <h4>Event</h4>
+        <ul>
+          <li><a href="wmk.html">WMK Demo Day</a></li>
+          <li><a href="awas-ketempelan.html">Awas Ketempelan Vol. 2</a></li>
+          <li><a href="mcebi.html">MCEBI National 2024</a></li>
+          <li><a href="k2-data-centre.html">K2 Data Centre Jakarta</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-nav-group">
+        <h4>Studio</h4>
+        <ul>
+          <li><a href="about.html">Tentang Kami</a></li>
+          <li><a href="about.html#history">Perjalanan CILPA</a></li>
+          <li><a href="about.html#gallery">Galeri Dokumentasi</a></li>
+          <li><a href="index.html#faq">Tanya Jawab (FAQ)</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-nav-group">
+        <h4>Hubungi Kami</h4>
+        <ul>
+          <li><a href="https://wa.me/6283119963064" target="_blank" rel="noopener noreferrer">WhatsApp Hotline</a></li>
+          <li><a href="mailto:info@cilpa.biz.id">info@cilpa.biz.id</a></li>
+          <li><a href="https://www.instagram.com/cilpa.official/" target="_blank" rel="noopener noreferrer">DM @cilpa.official</a></li>
+          <li><a href="index.html#inquiry">Kirim Pesan Web</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-giant-watermark" aria-hidden="true">
+      <span>C I L P A</span>
+    </div>
+
+    <div class="footer-meta-strip">
+      <p>&copy; 2026 CILPA.</p>
+      <span class="back-top-link" id="backToTopBtn" role="button" tabindex="0">
+        <span>Kembali ke Atas</span>
+        <span>↑</span>
+      </span>
+    </div>
+  </div>
+</footer>
+<button class="to-top" type="button" aria-label="Kembali ke atas">↑</button>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+<script type="module" src="assets/js/three-bg.js"></script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>
