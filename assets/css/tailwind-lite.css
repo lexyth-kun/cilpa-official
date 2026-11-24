@@ -1,0 +1,2 @@
+/* Tailwind-lite utilities used by the static CILPA site */
+.hidden{display:none!important}.block{display:block}.grid{display:grid}.flex{display:flex}.relative{position:relative}.absolute{position:absolute}.overflow-hidden{overflow:hidden}.items-center{align-items:center}.justify-between{justify-content:space-between}.gap-2{gap:.5rem}.gap-4{gap:1rem}.text-center{text-align:center}.rounded-full{border-radius:999px}.w-full{width:100%}.h-full{height:100%}.object-cover{object-fit:cover}.pointer-events-none{pointer-events:none}
